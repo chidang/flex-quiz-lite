@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--fx-primary: #007cba;
+	--fx-primary-2: #fd8600;
+	--fx-primary-8: #f4c0855e;
+	--fx-underline-primary: #007cba;
+	--fx-disabled: #241C154D;
+	--fx-border-color: #DFE5EB;
+	--fx-text-color: #202223;
+	--fx-border-radius: 0;
+	--flexa-brand: #00aad0;
+	--fx-gray-1: #f0f3f4a6;
+	--fx-input-border: #777474;
+}
+
+/* Clean wordpress notice */
+#pyre_post_options,
+div#edit-slug-box,
+#delete-action,
+a#fusion_toggle_front_end,
+#minor-publishing,
+#setting-error-tgmpa,
+.notice.notice-warning,
+.notice.notice-error,
+.error,
+#error,
+.update-nag,
+.update-nag.inline,
+#wpseo_meta,
+div#icl_div_config,
+.yoast,
+.wpseo-metabox{
+	display: none !important;
+}
+
+table {
+	font-size: inherit;
+}
+
+li.fusion-builder-option.textfield[data-option-id="per_page"] .option-details {
+	width: 100%;
+}
+li.fusion-builder-option.textfield[data-option-id="per_page"] .option-field.fusion-builder-option-container {
+	display: none;
+}
+li.fusion-builder-option.textfield[data-option-id="per_page"] .option-field.fusion-builder-option-container input#per_page{
+	pointer-events: none;
+}
+
+#wpadminbar img,
+#wpadminbar svg,
+#wpadminbar video,
+#wpadminbar canvas,
+#wpadminbar audio,
+#wpadminbar iframe,
+#wpadminbar embed,
+#wpadminbar object {
+	display: inline-block;
+}
+
+.ql-editor{
+	min-height:200px;
+}

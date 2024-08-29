@@ -1,0 +1,30 @@
+{
+  "name": "wp/code-standard",
+  "description": "Tools for developement",
+  "type": "project",
+  "license": "GPL",
+  "authors": [
+    {
+      "name": "flexa",
+      "email": "support@flexadmin.io"
+    }
+  ],
+  "scripts": {
+    "cs-fix": "./vendor/bin/phpcbf --standard=../phpcs.xml ../app",
+    "cs-log": "./vendor/bin/phpcs --report=xml ../app/includes > ../logs/log.xml"
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "squizlabs/php_codesniffer": "*",
+    "wp-coding-standards/wpcs": "^3.0",
+    "phpcompatibility/phpcompatibility-wp": "*"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "require-dev": {
+    "phpcsstandards/phpcsutils": "^1.0"
+  }
+}

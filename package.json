@@ -1,0 +1,32 @@
+{
+	"name": "flex-quiz",
+	"version": "1.0.0",
+	"description": "Exams plugin.",
+	"author": "Flexa",
+	"license": "GPL-2.0-or-later",
+	"main": "assets/index.js",
+	"scripts": {
+		"build": "npm run build-front && npm run build-backend",
+		"build-front": "cd app/frontend-ui && npm i && npm run build",
+		"build-backend": "cd app/backend-ui && npm i && npm run build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"start:backend": "cd app/backend-ui && npm run watch",
+		"start:front": "cd app/frontend-ui && npm run watch",
+		"translate": "php -d memory_limit=512M $(which wp) i18n make-pot . languages/flex-quiz.pot"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^27.5.0"
+	},
+	"dependencies": {
+		"@10up/block-components": "^1.18.0"
+	},
+	"files": [
+		"app",
+		"languages",
+		"index.php",
+		"flex-quiz.php"
+	]
+}

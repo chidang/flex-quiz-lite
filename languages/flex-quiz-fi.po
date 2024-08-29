@@ -1,0 +1,403 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Flex Quiz 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/flex-quiz\n"
+"Last-Translator: \n"
+"Language-Team: Finnish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-07-20 07:27+0000\n"
+"PO-Revision-Date: 2024-07-26 12:49+0000\n"
+"Language: fi\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Domain: flex-quiz\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Loco-Version: 2.6.11; wp-6.6.1"
+
+#. translators: %s - singular CPT/taxonomy name
+#: app/includes/PostTypes/class-cpt.php:154
+msgid "%s updated:"
+msgstr "%s päivitetty:"
+
+#. translators: %s - singular CPT/taxonomy name
+#: app/includes/PostTypes/class-cpt.php:128
+#: app/includes/PostTypes/class-cpt.php:130
+#: app/includes/Taxonomies/class-taxonomy.php:89
+msgid "Add New %s"
+msgstr "Lisää uusi %s"
+
+#. translators: %s - plural CPT/taxonomy name
+#: app/includes/PostTypes/class-cpt.php:126
+#: app/includes/Taxonomies/class-taxonomy.php:81
+msgid "All %s"
+msgstr "Kaikki %s"
+
+#: app/templates/single-submission.php:119
+#: app/frontend-ui/src/components/Results.jsx:32
+#: app/frontend-ui/src/components/ResultTemp.jsx:10
+msgid "Answers breakdown"
+msgstr "Vastausten erittely"
+
+#: app/frontend-ui/src/components/Dialog.jsx:22
+msgid "Are you sure you want to quit this exam?"
+msgstr "Haluatko varmasti keskeyttää tämän kokeen?"
+
+#: app/includes/Settings/class-examsettings.php:41
+msgid "Comma-separated list of email addresses"
+msgstr "Pilkuilla eroteltu sähköpostiosoitteiden luettelo"
+
+#: app/templates/single-submission.php:64
+#: app/frontend-ui/src/components/PersonalInformation.jsx:36
+msgid "Date of birth"
+msgstr "Syntymäaika"
+
+#: app/includes/PostTypes/class-submission.php:105
+msgid "Date of Birth:"
+msgstr "Syntymäaika:"
+
+#. Author of the plugin
+#: class-exams.php
+msgid "Flex"
+msgstr ""
+
+#. Plugin Name of the plugin
+#: class-exams.php
+msgid "Flex Quiz"
+msgstr ""
+
+#: app/frontend-ui/src/components/PersonalInformation.jsx:50
+msgid "E-mail"
+msgstr "Sähköposti"
+
+#. translators: %s - singular CPT/taxonomy name
+#: app/includes/PostTypes/class-cpt.php:132
+#: app/includes/Taxonomies/class-taxonomy.php:83
+msgid "Edit %s"
+msgstr "Muokkaa %s"
+
+#: app/templates/single-submission.php:72
+msgid "Email"
+msgstr "Sähköposti"
+
+#: app/includes/PostTypes/class-submission.php:104
+msgid "Email:"
+msgstr "Sähköposti:"
+
+#: app/includes/Api/class-exam.php:101
+msgid "Exam created successfully"
+msgstr "Koe luotu onnistuneesti"
+
+#: app/templates/single-submission.php:167
+msgid "Exam data not found."
+msgstr "Koetietoja ei löydy."
+
+#: app/includes/Api/class-exam.php:68 app/includes/Api/class-exam.php:111
+#: app/includes/Api/class-exam.php:140
+msgid "Exam not found"
+msgstr "Tenttiä ei löytynyt"
+
+#: app/includes/PostTypes/class-participant.php:62
+msgid "Exam Participant"
+msgstr "Kokeen osallistuja"
+
+#: app/includes/PostTypes/class-participant.php:63
+msgid "Exam Participants"
+msgstr "Kokeen osallistujat"
+
+#: app/includes/PostTypes/class-submission.php:45
+msgid "Exam Submission"
+msgstr "Tentin lähettäminen"
+
+#: app/includes/PostTypes/class-submission.php:46
+msgid "Exam Submissions"
+msgstr "Tenttilähetykset"
+
+#: app/includes/Api/class-exam.php:127
+msgid "Exam updated successfully"
+msgstr "Koe päivitetty onnistuneesti"
+
+#: app/includes/PostTypes/class-cpt.php:167
+#: app/includes/PostTypes/class-exam.php:67
+msgid "Examination"
+msgstr "Tutkimus"
+
+#: app/includes/PostTypes/class-submission.php:99
+msgid "Examination:"
+msgstr "Tutkimus:"
+
+#: app/includes/PostTypes/class-exam.php:68
+msgid "Examinations"
+msgstr "Tutkimukset"
+
+#. Description of the plugin
+#: class-exams.php
+msgid "Exams plugin."
+msgstr ""
+
+#: app/includes/Settings/class-examsettings.php:26
+#: app/includes/Settings/class-examsettings.php:49
+#: app/includes/Settings/class-examsettings.php:86
+msgid "Exams Settings"
+msgstr ""
+
+#: app/frontend-ui/src/pages/Examination.jsx:83
+msgid "Failed to check personal info"
+msgstr "Henkilötietojen tarkistaminen epäonnistui"
+
+#: app/includes/Api/class-submission.php:96
+msgid "Failed to create exam submission"
+msgstr "Koelähetyksen luominen epäonnistui"
+
+#: app/frontend-ui/src/pages/Examination.jsx:183
+msgid "Failed to submit examination."
+msgstr ""
+
+#: app/frontend-ui/src/pages/Examination.jsx:186
+msgid "Failed to submit examination:"
+msgstr ""
+
+#: app/includes/PostTypes/class-cpt.php:149
+msgid "Featured Image"
+msgstr ""
+
+#: app/frontend-ui/src/pages/Examination.jsx:309
+msgid "Finish"
+msgstr "Suorittaa loppuun"
+
+#: app/templates/single-submission.php:56
+#: app/frontend-ui/src/components/PersonalInformation.jsx:22
+msgid "Full name"
+msgstr "Koko nimi"
+
+#: app/includes/PostTypes/class-submission.php:103
+msgid "Full Name:"
+msgstr "Koko nimi:"
+
+#: app/frontend-ui/src/pages/Examination.jsx:288
+msgid "Go Back"
+msgstr "Mene takaisin"
+
+#: app/templates/single-submission.php:115
+msgid "Go to the exam page"
+msgstr "Siirry koesivulle"
+
+#: app/frontend-ui/src/components/ExamStep.jsx:24
+#: app/frontend-ui/src/components/PersonalInformation.jsx:10
+msgid "Good Luck on the Exam!"
+msgstr "Onnea kokeeseen!"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: class-exams.php
+msgid "https://flex.fi"
+msgstr ""
+
+#. translators: %s - singular CPT/taxonomy name
+#: app/includes/PostTypes/class-cpt.php:146
+msgid "Insert into %s:"
+msgstr ""
+
+#: app/templates/single-exam.php:67
+msgid "Loading"
+msgstr "Ladataan"
+
+#: app/frontend-ui/src/components/PersonalInformation.jsx:22
+msgid "Name (First and Last name)"
+msgstr "Nimi (etu- ja sukunimi)"
+
+#. translators: %s - singular CPT/taxonomy name
+#: app/includes/PostTypes/class-cpt.php:134
+msgid "New %s"
+msgstr ""
+
+#. translators: %s - singular CPT/taxonomy name
+#: app/includes/Taxonomies/class-taxonomy.php:91
+msgid "New %s Name"
+msgstr ""
+
+#: app/frontend-ui/src/pages/Examination.jsx:300
+msgid "Next - Step"
+msgstr "Seuraava - Vaihe"
+
+#: app/includes/PostTypes/class-submission.php:97
+#: app/frontend-ui/src/components/Dialog.jsx:30
+msgid "No"
+msgstr "Ei"
+
+#. translators: %s - plural CPT/taxonomy name
+#: app/includes/PostTypes/class-cpt.php:142
+msgid "No %s found in Trash."
+msgstr ""
+
+#. translators: %s - plural CPT/taxonomy name
+#: app/includes/PostTypes/class-cpt.php:140
+#: app/includes/Taxonomies/class-taxonomy.php:101
+msgid "No %s found."
+msgstr ""
+
+#: app/templates/single-submission.php:164
+msgid "No answers submitted."
+msgstr "Vastauksia ei lähetetty."
+
+#: app/includes/Settings/class-examsettings.php:56
+msgid "Notification Admin Emails"
+msgstr "Ilmoitusjärjestelmänvalvojan sähköpostit"
+
+#. translators: %s - singular CPT/taxonomy name
+#: app/includes/Taxonomies/class-taxonomy.php:93
+msgid "Parent %s"
+msgstr ""
+
+#. translators: %s - singular CPT/taxonomy name
+#: app/includes/PostTypes/class-cpt.php:144
+#: app/includes/Taxonomies/class-taxonomy.php:95
+msgid "Parent %s:"
+msgstr ""
+
+#: app/includes/PostTypes/class-participant.php:101
+msgid "Participant Details"
+msgstr "Osallistujan tiedot"
+
+#: app/templates/single-submission.php:51
+#: app/frontend-ui/src/pages/Examination.jsx:263
+msgid "Personal Information"
+msgstr "Henkilökohtaisia ​​tietoja"
+
+#: app/frontend-ui/src/components/ExamStep.jsx:28
+#| msgid "Please answer on %n questions below"
+msgid "Please answer on %s questions below"
+msgstr "Vastaa %s kysymykseen alla"
+
+#: app/frontend-ui/src/pages/Examination.jsx:95
+#: app/frontend-ui/src/pages/Examination.jsx:99
+msgid "Please answer question"
+msgstr "Ole hyvä ja vastaa kysymykseen"
+
+#: app/frontend-ui/src/components/PersonalInformation.jsx:14
+msgid "Please enter your Name, Date of Birth and E-mail"
+msgstr "Kirjoita nimesi, syntymäaikasi ja sähköpostiosoitteesi"
+
+#: app/frontend-ui/src/pages/Examination.jsx:55
+msgid "Please fill in all required personal information."
+msgstr "Täytä kaikki vaaditut henkilötiedot."
+
+#: app/frontend-ui/src/pages/Examination.jsx:59
+msgid "Please provide a valid email address."
+msgstr "Anna kelvollinen sähköpostiosoite."
+
+#: app/templates/single-submission.php:107
+msgid "Points"
+msgstr "Pisteet"
+
+#. translators: %s - plural CPT/taxonomy name
+#: app/includes/Taxonomies/class-taxonomy.php:99
+msgid "Popular %s"
+msgstr "Suosittu %s"
+
+#: app/frontend-ui/src/pages/Examination.jsx:283
+msgid "Quit Exam"
+msgstr "Lopeta koe"
+
+#: app/includes/PostTypes/class-submission.php:107
+#: app/frontend-ui/src/pages/Examination.jsx:270
+msgid "Results"
+msgstr "Tulokset"
+
+#: app/includes/Settings/class-examsettings.php:91
+msgid "Save Settings"
+msgstr ""
+
+#. translators: %s - plural CPT/taxonomy name
+#: app/includes/PostTypes/class-cpt.php:138
+#: app/includes/Taxonomies/class-taxonomy.php:97
+msgid "Search %s"
+msgstr ""
+
+#: app/includes/PostTypes/class-cpt.php:150
+msgid "Set featured image"
+msgstr ""
+
+#: app/includes/Settings/class-examsettings.php:27
+msgid "Settings"
+msgstr ""
+
+#: app/includes/Settings/class-examsettings.php:104
+msgid "Settings saved."
+msgstr ""
+
+#: app/frontend-ui/src/context/ErrorBoundary.jsx:22
+msgid "Something went wrong. Please contact the administrator for assistance."
+msgstr "Jotain meni pieleen. Ota yhteyttä ylläpitäjään saadaksesi apua."
+
+#: app/frontend-ui/src/components/PointsBox.jsx:22
+msgid "Start Again"
+msgstr "Aloittaa uudelleen"
+
+#: app/frontend-ui/src/components/ExamStep.jsx:27
+#: app/frontend-ui/src/components/PersonalInformation.jsx:13
+msgid "Step"
+msgstr "Vaihe"
+
+#: app/templates/single-submission.php:80
+msgid "Submission at"
+msgstr "Lähetys klo"
+
+#: app/includes/PostTypes/class-submission.php:80
+msgid "Submission Details"
+msgstr "Lähetyksen tiedot"
+
+#: app/templates/single-submission.php:94
+#: app/frontend-ui/src/components/PersonalInformation.jsx:67
+msgid "Subscribe for newsletter"
+msgstr "Tilaa uutiskirje"
+
+#: app/includes/PostTypes/class-submission.php:106
+msgid "Subscribe for newsletter:"
+msgstr "Tilaa uutiskirje:"
+
+#: app/templates/single-submission.php:109
+#: app/frontend-ui/src/components/PointsBox.jsx:11
+msgid "The exam average is"
+msgstr "Tentin keskiarvo on"
+
+#: app/includes/PostTypes/class-submission.php:109
+msgid "The exam average is:"
+msgstr "Tentin keskiarvo on:"
+
+#: app/includes/PostTypes/class-submission.php:108
+msgid "Total points are:"
+msgstr "Pisteet yhteensä ovat:"
+
+#. translators: %s - singular CPT/taxonomy name
+#: app/includes/Taxonomies/class-taxonomy.php:87
+msgid "Update %s"
+msgstr "Päivitä %s"
+
+#. translators: %s - singular CPT/taxonomy name
+#: app/includes/PostTypes/class-cpt.php:148
+msgid "Uploaded to this %s:"
+msgstr "Ladattu tähän %s:"
+
+#: app/includes/PostTypes/class-submission.php:102
+msgid "User Information"
+msgstr "Käyttäjän tiedot"
+
+#. translators: %s - singular CPT/taxonomy name
+#: app/includes/PostTypes/class-cpt.php:136
+#: app/includes/Taxonomies/class-taxonomy.php:85
+msgid "View %s"
+msgstr "Näytä %s"
+
+#: app/includes/PostTypes/class-submission.php:97
+#: app/frontend-ui/src/components/Dialog.jsx:26
+msgid "Yes"
+msgstr "Joo"
+
+#: app/includes/Api/class-submission.php:51
+msgid "You have already started this exam. This exam can only be done once."
+msgstr "Olet jo aloittanut tämän kokeen. Tämä koe voidaan tehdä vain kerran."
+
+#: app/frontend-ui/src/components/PointsBox.jsx:9
+msgid "Your points are"
+msgstr "Pisteesi ovat"

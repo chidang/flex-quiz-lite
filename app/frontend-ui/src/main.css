@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.fxq-input {
+		@apply fxq-w-full fxq-px-3 fxq-py-2 fxq-rounded-sm fxq-border fxq-border-gray-300 focus:visited:fxq-outline-none focus-visible:fxq-outline-none fxq-border-solid focus:fxq-border-primary fxq-items-center
+	}
+}
+
+:root {
+	--fx-primary: #0e2954;
+	--fx-secondary: #fff;
+	--fx-tertiary: #e40713;
+	--fx-dangerous: #e40713;
+	--fx-primary-box: #fff;
+	--fx-secondary-box: #0e2954;
+	--fx-disabled: #241C154D;
+	--fx-border-color: #DFE5EB;
+	--fx-text-color: #202223;
+	--fx-checkbox: #14325b;
+	--fx-border-radius: 0;
+}
+
+#wpadminbar img,
+#wpadminbar svg,
+#wpadminbar video,
+#wpadminbar canvas,
+#wpadminbar audio,
+#wpadminbar iframe,
+#wpadminbar embed,
+#wpadminbar object {
+	display: inline-block;
+}
+
+.exam-practice {
+	background-color: #FAFAFA;
+}
+
+.exam-practice-banner .container{
+	padding: 65px 0;
+	text-align: center;
+}
+
+.exam-practice-banner .container h1{
+	color: white;
+}
+
+#flex-quiz-wrap input[type="radio"] {
+	appearance: none;
+	min-width: 22px;
+	min-height: 22px;
+	background-color: white;
+	border: 2px solid var(--fx-checkbox); /* Custom border color */
+	border-radius: 50%;
+	position: relative;
+}
+
+#flex-quiz-wrap input[type="radio"]:checked::before {
+	content: '';
+	display: block;
+	width: 12px;
+	height: 12px;
+	background-color: var(--fx-checkbox); /* Custom checked color */
+	border-radius: 50%;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+}
+
+/* Hide the default checkbox */
+#flex-quiz-wrap input[type="checkbox"] {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border: 2px solid var(--fx-checkbox);
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	margin-bottom: 0;
+	margin-right: 0;
+}
+
+/* Style the checked state */
+#flex-quiz-wrap input[type="checkbox"]:checked {
+	background-color: var(--fx-checkbox);
+	border: 2px solid var(--fx-checkbox);
+}
+
+/* Style the checkmark */
+#flex-quiz-wrap input[type="checkbox"]:checked::after {
+	background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMCIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI2ZmZiIgZD0ibTQuMzMzIDkuNC00LTQgMS40LTEuNCAyLjYgMi42IDYuNi02LjYgMS40IDEuNHoiLz48L3N2Zz4=) no-repeat 50%;
+	background-size: contain;
+	content: "";
+	height: 9.4px;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 12px;
+}

@@ -1,0 +1,10 @@
+.DS_Store
+.idea
+flex-quiz.zip
+package-lock.json
+node_modules
+build
+release
+node_modules
+logs
+vendor
