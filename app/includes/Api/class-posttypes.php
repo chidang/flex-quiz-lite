@@ -10,10 +10,10 @@
 
 namespace Flex\Api;
 
+defined( 'ABSPATH' ) || exit;
+
 use Flex\Services\ApiValidation;
 use Flex\Helpers\Common;
-
-defined( 'ABSPATH' ) || exit;
 
 final class Participants {
 

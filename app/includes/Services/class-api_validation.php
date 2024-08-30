@@ -9,6 +9,8 @@
 
 namespace Flex\Services;
 
+defined( 'ABSPATH' ) || exit;
+
 /**
  * ApiValidation class.
  *

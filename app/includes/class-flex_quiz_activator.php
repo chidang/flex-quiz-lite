@@ -9,6 +9,8 @@
 
 namespace Flex;
 
+defined( 'ABSPATH' ) || exit;
+
 /**
  * Core class.
  *
@@ -29,19 +31,19 @@ final class FlexQuizActivator {
 		if ( is_multisite() ) {
 			$blog_id = get_current_blog_id();
 			switch_to_blog( $blog_id );
-			if ( 'v1' !== get_option( 'fxq_update_secondary_version' ) ) {
+			if ( 'v1' !== get_option( 'fxquiz_update_secondary_version' ) ) {
 				$this->update_global_settings();
 				$this->update_default_settings();
 			}
 			restore_current_blog();
-		} elseif ( 'v1' !== get_option( 'fxq_update_secondary_version' ) ) {
+		} elseif ( 'v1' !== get_option( 'fxquiz_update_secondary_version' ) ) {
 				$this->update_global_settings();
 				$this->update_default_settings();
 		}
 	}
 
 	public function update_global_settings() {
-		update_option( 'fxq_update_secondary_version', 'v1' );
+		update_option( 'fxquiz_update_secondary_version', 'v1' );
 	}
 
 	public function update_default_settings() {
@@ -53,20 +55,20 @@ final class FlexQuizActivator {
 	}
 
 	public function update_participant_submission_email_template() {
-		$email_subject = get_option( 'fxq_participant_submission_result_notification_subject', '' );
+		$email_subject = get_option( 'fxquiz_participant_submission_result_notification_subject', '' );
 		if ( empty( $email_subject ) ) {
-			update_option( 'fxq_participant_submission_result_notification_subject', 'Quiz Results and Personal Information Confirmation' );
+			update_option( 'fxquiz_participant_submission_result_notification_subject', 'Quiz Results and Personal Information Confirmation' );
 		}
-		$email_content = get_option( 'fxq_participant_submission_result_notification_message_content', '' );
+		$email_content = get_option( 'fxquiz_participant_submission_result_notification_message_content', '' );
 		if ( empty( $email_content ) ) {
 			ob_start();
 			include FLEX_QUIZ_DIR_PATH . '/app/email-templates/participant-submission-result-notification.php';
 			$email_content = ob_get_clean();
-			update_option( 'fxq_participant_submission_result_notification_message_content', $email_content );
+			update_option( 'fxquiz_participant_submission_result_notification_message_content', $email_content );
 		}
 	}
 
 	public function deactivate() {
-		update_option( 'fxq_update_secondary_version', '' );
+		update_option( 'fxquiz_update_secondary_version', '' );
 	}
 }

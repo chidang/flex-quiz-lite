@@ -9,6 +9,8 @@
 
 namespace Flex\PostTypes;
 
+defined( 'ABSPATH' ) || exit;
+
 /**
  * Exam class.
  *

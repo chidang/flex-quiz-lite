@@ -9,6 +9,8 @@
 
 namespace Flex\PostTypes;
 
+defined( 'ABSPATH' ) || exit;
+
 use Flex\Helpers\Common;
 
 /**
@@ -97,7 +99,7 @@ final class Participant extends CPT {
 
 	public function add_participant_meta_box() {
 		add_meta_box(
-			'fxq_participant_meta_box',
+			'fxquiz_participant_meta_box',
 			esc_html__( 'Participant Details', 'flex-quiz' ),
 			array( $this, 'render_participant_meta_box' ),
 			self::$name,

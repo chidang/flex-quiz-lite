@@ -29,8 +29,8 @@ $participant_url     = get_permalink( $participant_id );
 ?>
 <main id="flex-quiz-wrap" class="main-content exam-practice">
 	<?php
-	if ( get_option( 'fxq_exams_show_banner', false ) ) :
-		$banner_id  = get_option( 'fxq_exams_exam_banner', '' );
+	if ( get_option( 'fxquiz_show_banner', false ) ) :
+		$banner_id  = get_option( 'fxquiz_exam_banner', '' );
 		$banner_url = wp_get_attachment_url( $banner_id );
 		$style      = '';
 		$banner_url = ! empty( $banner_url ) ? $banner_url : FLEX_QUIZ_DIR_URL . 'app/assets/images/exam-banner.jpg';

@@ -17,7 +17,7 @@ $address     = get_post_meta( get_the_ID(), 'address', true );
 $birth_date  = Common::participant_birth_date( get_the_ID() );
 $submissions = get_post_meta( get_the_ID(), 'submissions', true );
 
-$banner_id  = get_option( 'fxq_exams_exam_banner', '' );
+$banner_id  = get_option( 'fxquiz_exam_banner', '' );
 $banner_url = wp_get_attachment_url( $banner_id );
 $style      = '';
 $banner_url = ! empty( $banner_url ) ? $banner_url : FLEX_QUIZ_DIR_URL . 'app/assets/images/exam-banner.jpg';

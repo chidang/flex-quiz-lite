@@ -9,6 +9,8 @@
 
 namespace Flex\Services;
 
+defined( 'ABSPATH' ) || exit;
+
 use Flex\PostTypes;
 
 /**
@@ -19,7 +21,7 @@ use Flex\PostTypes;
 final class Submission {
 
 	public static function check_participant_exam_submission( $exam_id, $email ) {
-		if ( empty( get_option( 'fxq_exams_allow_single_attempt', false ) ) ) {
+		if ( empty( get_option( 'fxquiz_allow_single_attempt', false ) ) ) {
 			return false;
 		}
 

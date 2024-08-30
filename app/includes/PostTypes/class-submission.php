@@ -11,6 +11,8 @@ namespace Flex\PostTypes;
 
 use Flex\Helpers\Common;
 
+defined( 'ABSPATH' ) || exit;
+
 /**
  * Exam class.
  *
@@ -75,7 +77,7 @@ final class Submission extends CPT {
 
 	public function add_submission_meta_box() {
 		add_meta_box(
-			'fxq_submission_meta_box',
+			'fxquiz_submission_meta_box',
 			esc_html__( 'Submission Details', 'flex-quiz' ),
 			array( $this, 'render_submission_meta_box' ),
 			self::$name,

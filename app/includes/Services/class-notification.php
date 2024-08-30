@@ -9,6 +9,8 @@
 
 namespace Flex\Services;
 
+defined( 'ABSPATH' ) || exit;
+
 use Flex\TemplateBuilder;
 
 /**
@@ -22,9 +24,9 @@ final class Notification {
 		$site_name = get_bloginfo( 'name' );
 		$from      = get_option( 'admin_email' );
 
-		$subject = get_option( 'fxq_participant_submission_result_notification_subject', 'Quiz Results and Personal Information Confirmation' );
+		$subject = get_option( 'fxquiz_participant_submission_result_notification_subject', 'Quiz Results and Personal Information Confirmation' );
 
-		$admin_emails = get_option( 'fxq_exams_admin_emails', '' );
+		$admin_emails = get_option( 'fxquiz_admin_emails', '' );
 
 		if ( empty( $admin_emails ) ) {
 			return;
@@ -47,7 +49,7 @@ final class Notification {
 		$site_name = get_bloginfo( 'name' );
 		$from      = get_option( 'admin_email' );
 
-		$subject = get_option( 'fxq_participant_submission_result_notification_subject', 'Quiz Results and Personal Information Confirmation' );
+		$subject = get_option( 'fxquiz_participant_submission_result_notification_subject', 'Quiz Results and Personal Information Confirmation' );
 
 		$participant_email = get_post_meta( $submission_id, 'email', true );
 
@@ -61,7 +63,7 @@ final class Notification {
 			"From: $site_name <$from>",
 		);
 
-		$mail_cc = get_option( 'fxq_participant_submission_result_notification_cc', '' );
+		$mail_cc = get_option( 'fxquiz_participant_submission_result_notification_cc', '' );
 		if ( ! empty( $mail_cc ) ) {
 			$mails = explode( ',', $mail_cc );
 			if ( ! empty( $mails ) ) {

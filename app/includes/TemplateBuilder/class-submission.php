@@ -9,6 +9,8 @@
 
 namespace Flex\TemplateBuilder;
 
+defined( 'ABSPATH' ) || exit;
+
 use Flex\Services;
 use Flex\Helpers\Common;
 /**

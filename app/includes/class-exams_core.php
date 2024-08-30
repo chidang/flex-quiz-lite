@@ -9,6 +9,8 @@
 
 namespace Flex;
 
+defined( 'ABSPATH' ) || exit;
+
 /**
  * Core class.
  *
@@ -232,13 +234,13 @@ final class ExamsCore {
 	public function add_custom_inline_styles() {
 		$custom_css = "
 			body {
-					--fx-primary: " . esc_html( get_option( 'fxq_exams_main_color', '#0e2954' ) ) . ";
-					--fx-secondary: " . esc_html( get_option( 'fxq_exams_result_text_color', '#fff' ) ) . ";
-					--fx-tertiary: " . esc_html( get_option( 'fxq_exams_next_button_color', '#e40713' ) ) . ";
-					--fx-primary-box: " . esc_html( get_option( 'fxq_exams_box_color', '#fff' ) ) . ";
-					--fx-secondary-box: " . esc_html( get_option( 'fxq_exams_result_box_color', '#0e2954' ) ) . ";
-					--fx-text-color: " . esc_html( get_option( 'fxq_exams_main_color', '#0e2954' ) ) . ";
-					--fx-checkbox: " . esc_html( get_option( 'fxq_exams_checkbox_color', '#0e2954' ) ) . ";
+					--fx-primary: " . esc_html( get_option( 'fxquiz_main_color', '#0e2954' ) ) . ";
+					--fx-secondary: " . esc_html( get_option( 'fxquiz_result_text_color', '#fff' ) ) . ";
+					--fx-tertiary: " . esc_html( get_option( 'fxquiz_next_button_color', '#e40713' ) ) . ";
+					--fx-primary-box: " . esc_html( get_option( 'fxquiz_box_color', '#fff' ) ) . ";
+					--fx-secondary-box: " . esc_html( get_option( 'fxquiz_result_box_color', '#0e2954' ) ) . ";
+					--fx-text-color: " . esc_html( get_option( 'fxquiz_main_color', '#0e2954' ) ) . ";
+					--fx-checkbox: " . esc_html( get_option( 'fxquiz_checkbox_color', '#0e2954' ) ) . ";
 			}";
 	
 		wp_add_inline_style( 'flex-quiz-front-style', $custom_css );

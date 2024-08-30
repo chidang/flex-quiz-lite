@@ -9,6 +9,8 @@
 
 namespace Flex\Services;
 
+defined( 'ABSPATH' ) || exit;
+
 use Flex\PostTypes;
 
 /**
@@ -86,7 +88,7 @@ final class Participant {
 			$participant_id = wp_insert_post( $post_data );
 		}
 
-		if ( get_option( 'fxq_exams_create_wp_user', false ) ) {
+		if ( get_option( 'fxquiz_create_wp_user', false ) ) {
 			User::create_or_update_user( $data );
 		}
 

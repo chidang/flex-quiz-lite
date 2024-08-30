@@ -9,6 +9,8 @@
 
 namespace Flex\Settings;
 
+defined( 'ABSPATH' ) || exit;
+
 use Flex\PostTypes;
 
 final class ExamSettings {

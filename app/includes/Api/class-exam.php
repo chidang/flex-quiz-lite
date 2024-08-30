@@ -9,6 +9,8 @@
 
 namespace Flex\Api;
 
+defined( 'ABSPATH' ) || exit;
+
 use Flex\Helpers\Common;
 use Flex\PostTypes;
 

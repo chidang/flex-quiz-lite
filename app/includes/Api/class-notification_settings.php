@@ -9,6 +9,8 @@
 
 namespace Flex\Api;
 
+defined( 'ABSPATH' ) || exit;
+
 use Flex\Helpers\Common;
 
 class NotificationSettings {
@@ -44,8 +46,8 @@ class NotificationSettings {
 
 	public function get_participant_submission_result_notification_settings( $request ) {
 		$settings = array(
-			'subject'         => get_option( 'fxq_participant_submission_result_notification_subject', '' ),
-			'message_content' => get_option( 'fxq_participant_submission_result_notification_message_content', '' ),
+			'subject'         => get_option( 'fxquiz_participant_submission_result_notification_subject', '' ),
+			'message_content' => get_option( 'fxquiz_participant_submission_result_notification_message_content', '' ),
 		);
 
 		return rest_ensure_response( $settings );
@@ -54,8 +56,8 @@ class NotificationSettings {
 	public function save_participant_submission_result_notification_settings( $request ) {
 		$params = $request->get_json_params();
 
-		update_option( 'fxq_participant_submission_result_notification_subject', sanitize_text_field( $params['subject'] ) );
-		update_option( 'fxq_participant_submission_result_notification_message_content', wp_kses_post( $params['message_content'] ) );
+		update_option( 'fxquiz_participant_submission_result_notification_subject', sanitize_text_field( $params['subject'] ) );
+		update_option( 'fxquiz_participant_submission_result_notification_message_content', wp_kses_post( $params['message_content'] ) );
 
 		return rest_ensure_response( array( 'success' => true ) );
 	}

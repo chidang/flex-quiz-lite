@@ -8,6 +8,8 @@
 
 namespace Flex\Taxonomies;
 
+defined( 'ABSPATH' ) || exit;
+
 /**
  * Abstract Taxonomy class.
  *

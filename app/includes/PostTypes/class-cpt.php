@@ -8,6 +8,8 @@
 
 namespace Flex\PostTypes;
 
+defined( 'ABSPATH' ) || exit;
+
 /**
  * Abstract CPT class.
  *

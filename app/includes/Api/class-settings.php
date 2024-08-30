@@ -9,6 +9,8 @@
 
 namespace Flex\Api;
 
+defined( 'ABSPATH' ) || exit;
+
 use Flex\Helpers\Common;
 use Flex\Services;
 
@@ -47,10 +49,10 @@ class Settings {
 
 	public function get_settings( $request ) {
 		$private_settings = array(
-			'sendExamResultToAdmin'       => get_option( 'fxq_exams_send_exam_result_to_admin', false ),
-			'sendExamResultToParticipant' => get_option( 'fxq_exams_send_exam_result_to_participant', false ),
-			'createWpUser'                => get_option( 'fxq_exams_create_wp_user', false ),
-			'createParticipantAfterStep1' => get_option( 'fxq_exams_create_participant_after_step_1', false ),
+			'sendExamResultToAdmin'       => get_option( 'fxquiz_send_exam_result_to_admin', false ),
+			'sendExamResultToParticipant' => get_option( 'fxquiz_send_exam_result_to_participant', false ),
+			'createWpUser'                => get_option( 'fxquiz_create_wp_user', false ),
+			'createParticipantAfterStep1' => get_option( 'fxquiz_create_participant_after_step_1', false ),
 		);
 
 		$settings = array_merge( Services\Settings::general(), $private_settings );
@@ -62,18 +64,18 @@ class Settings {
 	public function save_settings( $request ) {
 		$params = $request->get_json_params();
 
-		update_option( 'fxq_exams_submission_status', sanitize_text_field( $params['submissionStatus'] ) );
-		update_option( 'fxq_exams_redirect_url', sanitize_text_field( $params['redirectUrl'] ) );
-		update_option( 'fxq_exams_admin_emails', sanitize_text_field( $params['adminEmails'] ) );
-		update_option( 'fxq_exams_send_exam_result_to_admin', isset( $params['sendExamResultToAdmin'] ) ? (bool) $params['sendExamResultToAdmin'] : false );
-		update_option( 'fxq_exams_send_exam_result_to_participant', isset( $params['sendExamResultToParticipant'] ) ? (bool) $params['sendExamResultToParticipant'] : false );
-		update_option( 'fxq_exams_show_steps_bar', isset( $params['showStepsBar'] ) ? (bool) $params['showStepsBar'] : false );
-		update_option( 'fxq_exams_create_wp_user', isset( $params['createWpUser'] ) ? (bool) $params['createWpUser'] : false );
-		update_option( 'fxq_exams_create_participant_after_step_1', isset( $params['createParticipantAfterStep1'] ) ? (bool) $params['createParticipantAfterStep1'] : false );
-		update_option( 'fxq_exams_subscribe_newsletter', isset( $params['subscribeNewsletter'] ) ? (bool) $params['subscribeNewsletter'] : false );
-		update_option( 'fxq_exams_allow_single_attempt', isset( $params['allowSingleAttempt'] ) ? (bool) $params['allowSingleAttempt'] : false );
-		update_option( 'fxq_exams_headline', sanitize_text_field( $params['headline'] ) );
-		update_option( 'fxq_exams_personal_info_step_text', sanitize_text_field( $params['personalInfoStepText'] ) );
+		update_option( 'fxquiz_submission_status', sanitize_text_field( $params['submissionStatus'] ) );
+		update_option( 'fxquiz_redirect_url', sanitize_text_field( $params['redirectUrl'] ) );
+		update_option( 'fxquiz_admin_emails', sanitize_text_field( $params['adminEmails'] ) );
+		update_option( 'fxquiz_send_exam_result_to_admin', isset( $params['sendExamResultToAdmin'] ) ? (bool) $params['sendExamResultToAdmin'] : false );
+		update_option( 'fxquiz_send_exam_result_to_participant', isset( $params['sendExamResultToParticipant'] ) ? (bool) $params['sendExamResultToParticipant'] : false );
+		update_option( 'fxquiz_show_steps_bar', isset( $params['showStepsBar'] ) ? (bool) $params['showStepsBar'] : false );
+		update_option( 'fxquiz_create_wp_user', isset( $params['createWpUser'] ) ? (bool) $params['createWpUser'] : false );
+		update_option( 'fxquiz_create_participant_after_step_1', isset( $params['createParticipantAfterStep1'] ) ? (bool) $params['createParticipantAfterStep1'] : false );
+		update_option( 'fxquiz_subscribe_newsletter', isset( $params['subscribeNewsletter'] ) ? (bool) $params['subscribeNewsletter'] : false );
+		update_option( 'fxquiz_allow_single_attempt', isset( $params['allowSingleAttempt'] ) ? (bool) $params['allowSingleAttempt'] : false );
+		update_option( 'fxquiz_headline', sanitize_text_field( $params['headline'] ) );
+		update_option( 'fxquiz_personal_info_step_text', sanitize_text_field( $params['personalInfoStepText'] ) );
 
 		return rest_ensure_response( array( 'success' => true ) );
 	}

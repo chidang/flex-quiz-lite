@@ -9,6 +9,8 @@
 
 namespace Flex\Api;
 
+defined( 'ABSPATH' ) || exit;
+
 use Flex\Services;
 use Flex\PostTypes;
 use Flex\Helpers\Common;
@@ -61,7 +63,7 @@ class Submission {
 			);
 		} else {
 			//create participant if Store Participant information after Step 1 = true
-			if ( get_option( 'fxq_exams_create_participant_after_step_1', false ) ) {
+			if ( get_option( 'fxquiz_create_participant_after_step_1', false ) ) {
 				$participant = array(
 					'full_name'  => sanitize_text_field( $personalInfo['fullName'] ),
 					'birth_date' => sanitize_text_field( $personalInfo['dateOfBirth'] ),
@@ -127,11 +129,11 @@ class Submission {
 
 		Services\Exam::update_participants( $exam_id, $participant );// save paticipant into exams (participants array)
 
-		if ( get_option( 'fxq_exams_send_exam_result_to_admin', false ) ) {
+		if ( get_option( 'fxquiz_send_exam_result_to_admin', false ) ) {
 			Services\Notification::admin_notify( $submission_id );
 		}
 
-		if ( get_option( 'fxq_exams_send_exam_result_to_participant', false ) ) {
+		if ( get_option( 'fxquiz_send_exam_result_to_participant', false ) ) {
 			Services\Notification::participant_submisson_result_notify( $submission_id );
 		}
 
