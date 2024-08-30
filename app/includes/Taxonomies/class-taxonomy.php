@@ -3,10 +3,10 @@
  * Taxonomy base abstract class
  *
  * @since 1.0.0
- * @package Flex\Quiz
+ * @package FlexQuiz
  */
 
-namespace Flex\Taxonomies;
+namespace FlexQuiz\Taxonomies;
 
 defined( 'ABSPATH' ) || exit;
 

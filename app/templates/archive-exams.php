@@ -3,7 +3,7 @@
  * Single exam template.
  *
  * @since 1.0.0
- * @package Flex\Quiz
+ * @package FlexQuiz
  */
 
 get_header();

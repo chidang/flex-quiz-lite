@@ -4,7 +4,7 @@
  * Quiz Shortcode
  *
  * @since 1.0.0
- * @package Flex\Quiz
+ * @package FlexQuiz
  */
 
 /**
@@ -12,7 +12,7 @@
  * [exam id='123']
  */
 
-namespace Flex\Shortcodes;
+namespace FlexQuiz\Shortcodes;
 
 defined( 'ABSPATH' ) || exit;
 

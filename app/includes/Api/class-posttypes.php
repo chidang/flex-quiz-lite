@@ -4,16 +4,16 @@
  * Post Type API
  *
  * @since 1.0.0
- * @package Flex\Quiz
+ * @package FlexQuiz
  */
 
 
-namespace Flex\Api;
+namespace FlexQuiz\Api;
 
 defined( 'ABSPATH' ) || exit;
 
-use Flex\Services\ApiValidation;
-use Flex\Helpers\Common;
+use FlexQuiz\Services\ApiValidation;
+use FlexQuiz\Helpers\Common;
 
 final class Participants {
 

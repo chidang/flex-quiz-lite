@@ -4,15 +4,15 @@
  * Exam API
  *
  * @since 1.0.0
- * @package Flex\Quiz
+ * @package FlexQuiz
  */
 
-namespace Flex\Api;
+namespace FlexQuiz\Api;
 
 defined( 'ABSPATH' ) || exit;
 
-use Flex\Helpers\Common;
-use Flex\PostTypes;
+use FlexQuiz\Helpers\Common;
+use FlexQuiz\PostTypes;
 
 class Exam {
 

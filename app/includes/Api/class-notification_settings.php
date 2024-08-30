@@ -4,14 +4,14 @@
  *  Notification Settings API
  *
  * @since 1.0.0
- * @package Flex\Quiz
+ * @package FlexQuiz
  */
 
-namespace Flex\Api;
+namespace FlexQuiz\Api;
 
 defined( 'ABSPATH' ) || exit;
 
-use Flex\Helpers\Common;
+use FlexQuiz\Helpers\Common;
 
 class NotificationSettings {
 

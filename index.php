@@ -2,7 +2,7 @@
 /**
  * Silence is golden.
  *
- * @package  Flex\Quiz
+ * @package  FlexQuiz
  */
 
 // Silence is golden.

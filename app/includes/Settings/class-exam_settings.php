@@ -4,14 +4,14 @@
  * Exam settings
  *
  * @since 2.0.0
- * @package Flex\Settings
+ * @package FlexQuiz\Settings
  */
 
-namespace Flex\Settings;
+namespace FlexQuiz\Settings;
 
 defined( 'ABSPATH' ) || exit;
 
-use Flex\PostTypes;
+use FlexQuiz\PostTypes;
 
 final class ExamSettings {
 

@@ -3,10 +3,10 @@
  * Custom post type base abstract class
  *
  * @since 1.0.0
- * @package Flex\Quiz
+ * @package FlexQuiz
  */
 
-namespace Flex\PostTypes;
+namespace FlexQuiz\PostTypes;
 
 defined( 'ABSPATH' ) || exit;
 

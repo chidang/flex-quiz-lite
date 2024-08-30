@@ -4,14 +4,14 @@
  * Participant functionality
  *
  * @since 1.0.0
- * @package Flex\Services
+ * @package FlexQuiz\Services
  */
 
-namespace Flex\Services;
+namespace FlexQuiz\Services;
 
 defined( 'ABSPATH' ) || exit;
 
-use Flex\PostTypes;
+use FlexQuiz\PostTypes;
 
 /**
  * Participant class.

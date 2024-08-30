@@ -4,12 +4,12 @@
  * Single exam template.
  *
  * @since 1.0.0
- * @package Flex\Quiz
+ * @package FlexQuiz
  */
 
 get_header();
 
-use Flex\Helpers\Common;
+use FlexQuiz\Helpers\Common;
 
 $exam_id             = get_post_meta( get_the_ID(), 'exam_id', true );
 $exam_title          = get_the_title( $exam_id );

@@ -4,10 +4,10 @@
  * Activate plugin functionality
  *
  * @since 1.0.0
- * @package Flex\Quiz
+ * @package FlexQuiz
  */
 
-namespace Flex;
+namespace FlexQuiz;
 
 defined( 'ABSPATH' ) || exit;
 

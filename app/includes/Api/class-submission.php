@@ -4,16 +4,16 @@
  * Submission API
  *
  * @since 1.0.0
- * @package Flex\Quiz
+ * @package FlexQuiz
  */
 
-namespace Flex\Api;
+namespace FlexQuiz\Api;
 
 defined( 'ABSPATH' ) || exit;
 
-use Flex\Services;
-use Flex\PostTypes;
-use Flex\Helpers\Common;
+use FlexQuiz\Services;
+use FlexQuiz\PostTypes;
+use FlexQuiz\Helpers\Common;
 
 class Submission {
 

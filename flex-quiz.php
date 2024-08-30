@@ -4,7 +4,7 @@
  *
  * @link              https://www.flexadmin.io/flex-quiz/
  * @since             1.1.0
- * @package           Flex\Quiz
+ * @package           FlexQuiz
  *
  * @wordpress-plugin
  * Plugin Name:       Flex Quiz
@@ -20,7 +20,7 @@
  * Requires PHP:      7.4
  */
 
-namespace Flex;
+namespace FlexQuiz;
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
@@ -90,7 +90,7 @@ final class Exams {
 	 * @param string $class_name Class name to load.
 	 */
 	public function autoload( string $class_name ) {
-		$prefix = 'Flex\\';
+		$prefix = 'FlexQuiz\\';
 
 		// Skip non-plugin classes.
 		$len = strlen( $prefix );
@@ -143,24 +143,24 @@ final class Exams {
 	}
 
 	public static function activation() {
-		add_option( 'Activated_Flex_Quiz', 'flex-quiz' );
+		add_option( 'fxquiz_activated_flex_quiz', 'flex-quiz' );
 		require FLEX_QUIZ_INC_PATH . '/class-flex_quiz_activator.php';
 		$activator = new FlexQuizActivator();
 		$activator->activate();
 	}
 
 	public static function devactivation() {
-		delete_option( 'Activated_Flex_Quiz');
+		delete_option( 'fxquiz_activated_flex_quiz');
 		require FLEX_QUIZ_INC_PATH . '/class-flex-quiz-activator.php';
 		$activator = new FlexQuizActivator();
 		$activator->deactivate();
 	}
 }
 
-add_action( 'plugins_loaded', array( 'Flex\\Exams', 'get_instance' ) );
+add_action( 'plugins_loaded', array( 'FlexQuiz\\Exams', 'get_instance' ) );
 
 /** Activation hooks */
-register_activation_hook(__FILE__, array('Flex\Exams', 'activation'));
+register_activation_hook(__FILE__, array('FlexQuiz\Exams', 'activation'));
 
 /** Deactivation hooks */
-register_deactivation_hook(__FILE__, array('Flex\Exams', 'devactivation'));
+register_deactivation_hook(__FILE__, array('FlexQuiz\Exams', 'devactivation'));

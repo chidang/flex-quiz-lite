@@ -1,5 +1,5 @@
 <?php
-namespace Flex\Helpers;
+namespace FlexQuiz\Helpers;
 
 defined( 'ABSPATH' ) || exit;
 

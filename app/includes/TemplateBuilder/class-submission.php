@@ -4,15 +4,15 @@
  * Submission functionality
  *
  * @since 1.0.0
- * @package Flex\TemplateBuilder
+ * @package FlexQuiz\TemplateBuilder
  */
 
-namespace Flex\TemplateBuilder;
+namespace FlexQuiz\TemplateBuilder;
 
 defined( 'ABSPATH' ) || exit;
 
-use Flex\Services;
-use Flex\Helpers\Common;
+use FlexQuiz\Services;
+use FlexQuiz\Helpers\Common;
 /**
  * Submission class.
  *

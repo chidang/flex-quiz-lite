@@ -4,10 +4,10 @@
  * Core plugin functionality
  *
  * @since 1.0.0
- * @package Flex\Quiz
+ * @package FlexQuiz
  */
 
-namespace Flex;
+namespace FlexQuiz;
 
 defined( 'ABSPATH' ) || exit;
 
@@ -149,7 +149,7 @@ final class ExamsCore {
 				'flex-quiz-script',
 				FLEX_QUIZ_DIR_URL . '/build/backend-ui/' . $js_file,
 				array( 'wp-element', 'media-editor', 'wp-components', 'wp-data', 'wp-i18n' ),
-				filemtime( FLEX_QUIZ_DIR_PATH . 'build/backend-ui/' . $js_file ),
+				filemtime( FLEX_QUIZ_DIR_PATH . '/build/backend-ui/' . $js_file ),
 				true
 			);
 

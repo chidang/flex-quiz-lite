@@ -4,11 +4,11 @@
  * Single participant template.
  *
  * @since 1.0.0
- * @package Flex\Quiz
+ * @package FlexQuiz
  */
 
 get_header();
-use Flex\Helpers\Common;
+use FlexQuiz\Helpers\Common;
 
 $full_name   = get_the_title();
 $email       = get_post_meta( get_the_ID(), 'email', true );
