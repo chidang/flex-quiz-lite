@@ -108,7 +108,7 @@ $style      = 'background-image: url(' . esc_url( $banner_url ) . ');';
 								$submission_link  = get_permalink( $submission_id );
 								?>
 														<li class="fxq-flex fxq-items-center fxq-text-blue-950 fxq-text-[0.875rem] fxq-font-bold fxq-whitespace-nowrap fxq-px-2 fxq-py-0 fxq-leading-8 fxq-mb-0">
-								<span><?php echo esc_html( $index ) + 1; ?>.</span><a class="fxq-ml-2" href="<?php echo esc_html( $submission_link ); ?>"><?php echo esc_html( $submission_title ); ?></a>
+								<span><?php echo esc_html( $index + 1 ); ?>.</span><a class="fxq-ml-2" href="<?php echo esc_html( $submission_link ); ?>"><?php echo esc_html( $submission_title ); ?></a>
 							</li>
 							<?php endforeach; ?>
 						</ol>
