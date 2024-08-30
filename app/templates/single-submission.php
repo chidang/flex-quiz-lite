@@ -8,7 +8,6 @@
  */
 
 get_header();
-require FLEX_QUIZ_DIR_PATH . '/app/templates/style.php';
 
 use Flex\Helpers\Common;
 

@@ -7,7 +7,6 @@
  */
 
 get_header();
-require FLEX_QUIZ_DIR_PATH . '/app/templates/style.php';
 
 ?>
 
@@ -44,37 +43,6 @@ require FLEX_QUIZ_DIR_PATH . '/app/templates/style.php';
 			<div class="exam-content">
 				<input id="flex-quiz-id" type="hidden" value="<?php echo esc_html( get_the_ID() ); ?>" />
 				<div id="flex-quiz-app">
-					<style>
-						.loading {
-							font-size: 18px;
-							letter-spacing: 0.1em;
-							position: absolute;
-							top: 50%;
-							left: 50%;
-							display: inline;
-							transform: translateX(-40px);
-						}
-
-						.loading::after {
-						content: ' ';
-						animation: dots 1.5s steps(5, end) infinite;
-						}
-
-						@keyframes dots {
-						0%, 20% {
-							content: ' ';
-						}
-						40% {
-							content: '.';
-						}
-						60% {
-							content: '..';
-						}
-						80%, 100% {
-							content: '...';
-						}
-						}
-					</style>
 					<div style="position: relative; height: 300px">
 						<p class="loading"><?php esc_html_e( 'Loading', 'flex-quiz' ); ?></p>
 					</div>

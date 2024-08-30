@@ -69,7 +69,6 @@ final class Participant extends CPT {
 		add_action( 'save_post', array( $this, 'save_meta_box_data' ) );
 		add_filter( 'manage_fxq-participant_posts_columns', array( $this, 'set_custom_columns' ) );
 		add_action( 'manage_fxq-participant_posts_custom_column', array( $this, 'custom_column' ), 10, 2 );
-		add_action( 'admin_head', array( $this, 'custom_columns_style' ) );
 		add_filter( 'template_include', array( $this, 'template' ) );
 	}
 
@@ -199,13 +198,6 @@ final class Participant extends CPT {
 					echo esc_html( $total_quiz );
 				break;
 		}
-	}
-
-	public function custom_columns_style() {
-			echo '<style>
-					.column-email { width: 20%; }
-					.column-birth_date { width: 20%; }
-			</style>';
 	}
 
 	public function template( string $template ): string {

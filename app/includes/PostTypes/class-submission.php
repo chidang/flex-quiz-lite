@@ -52,7 +52,6 @@ final class Submission extends CPT {
 		add_filter( 'template_include', array( $this, 'template' ) );
 		add_filter( 'manage_fxq-submission_posts_columns', array( $this, 'set_custom_columns' ) );
 		add_action( 'manage_fxq-submission_posts_custom_column', array( $this, 'custom_column' ), 10, 2 );
-		add_action( 'admin_head', array( $this, 'custom_columns_style' ) );
 	}
 
 	public function add_ob_start() {
@@ -166,12 +165,5 @@ final class Submission extends CPT {
 					echo '<a href="' . esc_url( get_permalink( $exam_id ) ) . '">' . esc_html( $exam_id ) . '</a>';
 				break;
 		}
-	}
-
-	public function custom_columns_style() {
-			echo '<style>
-					.column-email { width: 20%; }
-					.column-birth_date { width: 20%; }
-			</style>';
 	}
 }
