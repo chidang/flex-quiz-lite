@@ -69,7 +69,6 @@ final class Exam extends CPT {
 		add_filter( 'template_include', array( $this, 'template' ) );
 		add_filter( 'manage_flex-quiz_posts_columns', array( $this, 'set_custom_columns' ) );
 		add_action( 'manage_flex-quiz_posts_custom_column', array( $this, 'custom_column' ), 10, 2 );
-		add_action( 'admin_head', array( $this, 'custom_columns_style' ) );
 	}
 
 	protected function custom_options(): array {
@@ -150,13 +149,5 @@ final class Exam extends CPT {
 					echo esc_html( $total_question );
 				break;
 		}
-	}
-
-	public function custom_columns_style() {
-			echo '<style>
-					.column-total_participant { width: 10%; }
-					.column-total_step { width: 10%; }
-					.column-total_question { width: 10%; }
-			</style>';
 	}
 }

@@ -40,7 +40,6 @@ class Quiz {
 		}
 
 		ob_start();
-		require FLEX_QUIZ_DIR_PATH . '/app/templates/style.php';
 		?>
 	<div class="exam-content">
 		<input id="flex-quiz-id" type="hidden" value="<?php echo esc_attr( $post_id ); ?>" />

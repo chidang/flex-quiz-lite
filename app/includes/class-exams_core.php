@@ -41,6 +41,8 @@ final class ExamsCore {
 		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_flex_quiz_scripts' ) );
 
 		add_action( 'admin_enqueue_scripts', array( $this, 'custom_dequeue_admin_script' ), 100 );
+
+		add_action( 'wp_enqueue_scripts', array( $this, 'add_custom_inline_styles' ), 20 );
 	}
 
 	/**
@@ -168,7 +170,20 @@ final class ExamsCore {
 	public function enqueue_examination_frontend_script() {
 		global $post;
 
-		if ( is_singular( PostTypes\Exam::$name ) || ( $post && has_shortcode( $post->post_content, 'flex-quiz' ) ) ) {
+		// Define the post types for easier reference
+		$exam_post_type        = PostTypes\Exam::$name;
+		$submission_post_type  = PostTypes\Submission::$name;
+		$participant_post_type = PostTypes\Participant::$name;
+
+		// Check if the current post is singular and of a specific post type
+		$is_exam        = is_singular( $exam_post_type );
+		$is_submission  = is_singular( $submission_post_type );
+		$is_participant = is_singular( $participant_post_type );
+
+		// Check if the post contains the 'flex-quiz' shortcode
+		$has_flex_quiz_shortcode = $post && has_shortcode( $post->post_content, 'flex-quiz' );
+
+		if ( $is_exam || $is_submission || $is_participant || $has_flex_quiz_shortcode ) {
 			wp_enqueue_script(
 				'flex-quiz-app',
 				FLEX_QUIZ_DIR_URL . 'build/frontend-ui/app.js',
@@ -213,6 +228,23 @@ final class ExamsCore {
 			);
 		}
 	}
+
+	public function add_custom_inline_styles() {
+		$custom_css = "
+			body {
+					--fx-primary: " . esc_html( get_option( 'fxq_exams_main_color', '#0e2954' ) ) . ";
+					--fx-secondary: " . esc_html( get_option( 'fxq_exams_result_text_color', '#fff' ) ) . ";
+					--fx-tertiary: " . esc_html( get_option( 'fxq_exams_next_button_color', '#e40713' ) ) . ";
+					--fx-primary-box: " . esc_html( get_option( 'fxq_exams_box_color', '#fff' ) ) . ";
+					--fx-secondary-box: " . esc_html( get_option( 'fxq_exams_result_box_color', '#0e2954' ) ) . ";
+					--fx-text-color: " . esc_html( get_option( 'fxq_exams_main_color', '#0e2954' ) ) . ";
+					--fx-checkbox: " . esc_html( get_option( 'fxq_exams_checkbox_color', '#0e2954' ) ) . ";
+			}";
+	
+		wp_add_inline_style( 'flex-quiz-front-style', $custom_css );
+	}
+	
+
 
 	public function disable_gutenberg_for_post_type( $can_edit, $post_type ) {
 		if ( PostTypes\Exam::$name === $post_type ) {
