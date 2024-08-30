@@ -27,7 +27,7 @@ final class Settings {
 			'subscribeNewsletter'  => get_option( 'fxq_exams_subscribe_newsletter', false ),
 			'allowSingleAttempt'   => get_option( 'fxq_exams_allow_single_attempt', false ),
 			'headline'             => get_option( 'fxq_exams_headline', esc_html__( 'Good Luck on the Exam!', 'flex-quiz' ) ),
-			'personalInfoStepText' => get_option( 'fxq_exams_personal_info_step_text', esc_html__( 'Please enter your Name, Date of Birth and E-mail' ) ),
+			'personalInfoStepText' => get_option( 'fxq_exams_personal_info_step_text', esc_html__( 'Please enter your Name, Date of Birth and E-mail', 'flex-quiz' ) ),
 		);
 	}
 
