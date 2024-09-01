@@ -6,8 +6,10 @@
  * @since 1.0.0
  * @package FlexQuiz
  */
+if ( ! defined( 'ABSPATH' ) ) exit;
 
 get_header();
+
 use FlexQuiz\Helpers\Common;
 
 $full_name   = get_the_title();

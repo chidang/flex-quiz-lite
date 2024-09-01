@@ -5,6 +5,7 @@
  * @since 1.0.0
  * @package FlexQuiz
  */
+if ( ! defined( 'ABSPATH' ) ) exit;
 
 get_header();
 ?>

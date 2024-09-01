@@ -31,6 +31,14 @@ Once installed, you will need to create your first quiz by going to Flex Quiz, t
 
 == Changelog ==
 
+Version 1.1.1
+
+    * Use wp_enqueue commands.
+    * Fix Internationalization.
+    * Escap Variables.
+    * Generic function/class/define/namespace/option names
+    * Fix: Allowing Direct File Access to plugin files.
+
 Version 1.1.0
 
     * Fix Plugin Check Error: Scripts must be registered/enqueued via wp_enqueue_script().
@@ -82,4 +90,4 @@ Version 1.0.0
     * Displayed quizzes on the frontend.
 
 == Upgrade Notice ==
-    * Version 1.1.0: Essential update for better: Fix Plugin Check Error: Scripts must be registered/enqueued via wp_enqueue_script(). Recommended for all users to upgrade.
+    * Version 1.1.1: Essential update for better: Fix Plugin security
