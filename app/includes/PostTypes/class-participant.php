@@ -137,7 +137,7 @@ final class Participant extends CPT {
 		if ( ! isset( $_POST['quiz_participants_nonce'] ) ) {
 				return $post_id;
 		}
-		$nonce = sanitize_text_field( $_POST['quiz_participants_nonce'] );
+		$nonce = sanitize_text_field( wp_unslash( $_POST['quiz_participants_nonce'] ) );
 
 		// Verify the nonce
 		if ( ! wp_verify_nonce( $nonce, basename( __FILE__ ) ) ) {
@@ -160,7 +160,7 @@ final class Participant extends CPT {
 
 		// Sanitize and save the birth_date meta field
 		if ( isset( $_POST['birth_date'] ) ) {
-				$birth_date = sanitize_text_field( $_POST['birth_date'] );
+				$birth_date = sanitize_text_field( wp_unslash( $_POST['birth_date'] ) );
 				update_post_meta( $post_id, 'birth_date', $birth_date );
 		}
 	}
