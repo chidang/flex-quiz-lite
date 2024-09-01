@@ -33,7 +33,6 @@ define( 'FLEX_QUIZ_DIR_URL', plugin_dir_url( __FILE__ ) );
 define( 'FLEX_QUIZ_INC_PATH', FLEX_QUIZ_DIR_PATH . '/app/includes' );
 define( 'FLEX_QUIZ_EMAIL_TEMPLATE_PATH', FLEX_QUIZ_DIR_PATH . '/app/email-templates' );
 define( 'FLEX_QUIZ_BLOCK_PATH', FLEX_QUIZ_DIR_PATH . '/build' );
-define( 'FLEX_DEFAULT_EXAMS_PER_PAGE', 20 );
 define( 'FLEX_QUIZ_ORDER', 'ASC' );
 define( 'FLEX_QUIZ_REWRITE_EXAMS_SLUG', 'examinations' );
 define( 'FLEX_QUIZ_DAY_QUERY_FORMAT', 'Y-m-d' );
