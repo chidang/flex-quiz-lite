@@ -65,4 +65,4 @@ Create new pull request to contribute
 
 ## License
 
-WordPress is free software, and is released under the terms of the GNU General Public License version 2 or (at your option) any later version. See [LICENSE.md](LICENSE.md) for complete license.
+WordPress is free software, and is released under the terms of the GPLv2 or later. See [LICENSE](ttp://www.gnu.org/licenses/gpl-2.0.html) for complete license.
