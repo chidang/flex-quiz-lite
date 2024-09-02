@@ -55,6 +55,14 @@ sh release.sh
 
 After the production build file is created in the `/release` directory, you can use it to install into your Wordpress project.
 
+### Report issue:
+Please create issue in this link
+
+[https://github.com/chidang/flex-quiz-lite/issues/new](https://github.com/chidang/flex-quiz-lite/issues/new)
+
+### Contribute:
+Create new pull request to contribute
+
 ## License
 
 WordPress is free software, and is released under the terms of the GNU General Public License version 2 or (at your option) any later version. See [LICENSE.md](LICENSE.md) for complete license.
