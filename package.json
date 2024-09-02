@@ -13,8 +13,8 @@
 		"lint:css": "wp-scripts lint-style",
 		"lint:js": "wp-scripts lint-js",
 		"packages-update": "wp-scripts packages-update",
-		"start:backend": "cd app/backend-ui && npm run watch",
-		"start:front": "cd app/frontend-ui && npm run watch",
+		"start:backend": "cd app/backend-ui && npm i && npm run watch",
+		"start:front": "cd app/frontend-ui && npm i && npm run watch",
 		"translate": "php -d memory_limit=512M $(which wp) i18n make-pot . languages/flex-quiz.pot"
 	},
 	"devDependencies": {
