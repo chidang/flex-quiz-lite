@@ -36,3 +36,25 @@ cd flex-quiz
 ```
 npm run start:front
 ```
+
+## Build production:
+
+#### Navigate to the root directory of the plugin:
+
+```
+cd flex-quiz
+```
+
+#### Run command line to build production:
+
+```
+sh release.sh
+```
+
+### Install to your WordPress project:
+
+After the production build file is created in the `/release` directory, you can use it to install into your Wordpress project.
+
+## License
+
+WordPress is free software, and is released under the terms of the GNU General Public License version 2 or (at your option) any later version. See [LICENSE.md](LICENSE.md) for complete license.

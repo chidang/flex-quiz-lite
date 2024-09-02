@@ -24,6 +24,10 @@ The plugin can be installed like any other.
 
 Once installed, you will need to create your first quiz by going to Flex Quiz, then Add New Flex Quiz.
 
+
+== Non-compiled version ==
+View the <a href="https://github.com/chidang/flex-quiz-lite">Non-compile version</a>
+
 == Screenshots ==
 1. Personal information
 2. Quiz questions and awnswers
