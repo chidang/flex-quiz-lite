@@ -20,19 +20,8 @@ npm run build
 
 cd ../..
 
-# cd blocks/
-# npm install
-# echo "Running Block JS Build..."
-# npm run build
-# cd ../
-
 echo "Syncing files..."
 rsync -rc --exclude-from="$PROJECT_PATH/.distignore" "$PROJECT_PATH/" "$DEST_PATH/" --delete --delete-excluded
-
-# echo "Run lint"
-# cd tools
-# composer run cbf ../build
-# cd ..
 
 echo "Generating zip file..."
 cd "$BUILD_PATH" || exit
