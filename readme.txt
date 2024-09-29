@@ -24,9 +24,25 @@ The plugin can be installed like any other.
 
 Once installed, you will need to create your first quiz by going to Flex Quiz, then Add New Flex Quiz.
 
-
 == Non-compiled version ==
 View the <a href="https://github.com/chidang/flex-quiz-lite">Non-compile version</a>
+
+== Used Libraries ==
+This plugin uses the following libraries, all of which are licensed under the MIT License:
+
+- @ckeditor/ckeditor5-react: ^8.0.0
+- antd: ^5.17.4
+- axios: ^1.7.2
+- ckeditor5: ^42.0.2
+- pretty: ^2.0.0
+- quill: ^2.0.2
+- react: ^18.2.0
+- react-beautiful-dnd: ^13.1.1
+- react-copy-to-clipboard: ^5.1.0
+- react-dom: ^18.2.0
+- react-quill: ^2.0.0
+- @wordpress/i18n: ^5.3.0,
+- clsx: ^2.1.1,
 
 == Screenshots ==
 1. Personal information

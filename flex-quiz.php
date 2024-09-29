@@ -3,14 +3,14 @@
  * Flex Quiz plugin
  *
  * @link              https://www.flexadmin.io/flex-quiz/
- * @since             1.1.1
+ * @since             1.1.2
  * @package           FlexQuiz
  *
  * @wordpress-plugin
  * Plugin Name:       Flex Quiz
  * Plugin URI:        https://www.flexadmin.io/flex-quiz/
  * Description:       Flex Quiz plugin makes it easy to create and manage multiple quiz exams effortlessly. Enhance your site with interactive quizzes and assessments with a user-friendly interface and powerful features.
- * Version:           1.1.1
+ * Version:           1.1.2
  * Author:            Flexa
  * Author URI:        https://www.flexadmin.io
  * License:           GPLv3 or later
@@ -27,7 +27,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'FLEX_QUIZ_VERSION', '1.1.1' );
+define( 'FLEX_QUIZ_VERSION', '1.1.2' );
 define( 'FLEX_QUIZ_DIR_PATH', __DIR__ );
 define( 'FLEX_QUIZ_DIR_URL', plugin_dir_url( __FILE__ ) );
 define( 'FLEX_QUIZ_INC_PATH', FLEX_QUIZ_DIR_PATH . '/app/includes' );

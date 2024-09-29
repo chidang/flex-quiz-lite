@@ -13,10 +13,6 @@ package.json
 package-lock.json
 release.sh
 flex-events.zip
-README.md
-/app/backend-ui
-/app/blocks
-/app/frontend-ui
 /release
 /tools
 /logs
