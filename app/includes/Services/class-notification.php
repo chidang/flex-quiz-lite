@@ -79,23 +79,4 @@ final class Notification {
 
 		wp_mail( $participant_email, $subject, $mail_body, $headers );
 	}
-
-	public static function error_notify( $subject, $error_message ) {
-		$site_name = get_bloginfo( 'name' );
-		$from      = get_option( 'admin_email' );
-
-		$headers    = array(
-			'Content-Type: text/html; charset=UTF-8',
-			"From: $site_name <$from>",
-		);
-		$mail_body  = '<p>Hi FlexAdmin, there is a ERROR on the flex-quiz plugin</p>';
-		$mail_body  = '<p>Website: ' . get_site_url() . '</p>';
-		$mail_body .= $error_message;
-
-		wp_mail( 'support@flexadmin.io', $subject, $mail_body, $headers );
-	}
-
-	private static function configure_smtp() {
-
-	}
 }

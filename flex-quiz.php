@@ -13,7 +13,7 @@
  * Version:           1.1.1
  * Author:            Flexa
  * Author URI:        https://www.flexadmin.io
- * License:           GPLv2 or later
+ * License:           GPLv3 or later
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       flex-quiz
  * Domain Path:       /languages
@@ -150,7 +150,7 @@ final class Exams {
 
 	public static function devactivation() {
 		delete_option( 'fxquiz_activated_flex_quiz');
-		require FLEX_QUIZ_INC_PATH . '/class-flex-quiz-activator.php';
+		require FLEX_QUIZ_INC_PATH . '/class-flex_quiz_activator.php';
 		$activator = new FlexQuizActivator();
 		$activator->deactivate();
 	}
